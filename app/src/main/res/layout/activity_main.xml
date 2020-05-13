@@ -44,9 +44,9 @@
         android:layout_height="65dp"
         android:layout_marginStart="110dp"
         android:layout_marginLeft="110dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="111dp"
-        android:layout_marginRight="111dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
         android:background="@drawable/mybuttonamarillo"
         android:fontFamily="@font/rubik_light"
         android:text="jugar"
@@ -57,47 +57,54 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
-    <Button
-        android:id="@+id/btnAyuda"
-        android:layout_width="110dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/mybuttonamarillo"
-        android:fontFamily="@font/rubik_light"
-        android:text="ayuda"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnJugar" />
-
-    <ImageButton
-        android:id="@+id/imageButtonEstadisticas"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/mybuttonamarillo"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/btnAyuda"
-        app:layout_constraintTop_toBottomOf="@+id/btnJugar"
-        app:srcCompat="@drawable/estadisticas" />
-
     <ImageButton
         android:id="@+id/imageButtonAcerca"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginTop="406dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/mybuttonamarillo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewTitulo"
         app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="190dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJugar">
+
+        <Button
+            android:id="@+id/btnAyuda"
+            android:layout_width="110dp"
+            android:layout_height="65dp"
+            android:background="@drawable/mybuttonamarillo"
+            android:fontFamily="@font/rubik_light"
+            android:text="ayuda"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButtonEstadisticas"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/mybuttonamarillo"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toEndOf="@+id/btnAyuda"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/estadisticas" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

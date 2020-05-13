@@ -21,9 +21,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final Button btnAyuda = findViewById(R.id.btnAyuda);
+        btnAyuda.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToReglas();
+            }
+        });
+
     }
     private void goToOpcionesJuego(){
         Intent intentOpciones = new Intent(this,OpcionesJuego.class);
         startActivityForResult(intentOpciones, 1);
     }
+
+    private void goToReglas(){
+        Intent intentReglas = new Intent(this,Reglas.class);
+        startActivityForResult(intentReglas, 1);
+    }
+
 }
