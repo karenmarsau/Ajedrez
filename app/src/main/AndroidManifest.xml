@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Rendirse"></activity>
+        <activity android:name=".Tablero"></activity>
+        <activity android:name=".Acerca" />
+        <activity android:name=".Reglas2" />
+        <activity android:name=".Rendirse" />
         <activity android:name=".Estadisticas" />
         <activity android:name=".Reglas" />
         <activity android:name=".VictoriaAmarillas" />

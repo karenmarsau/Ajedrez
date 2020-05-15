@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final ImageButton imageButtonAcerca = findViewById(R.id.imageButtonAcerca);
+        imageButtonAcerca.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                goToAcerca();
+            }
+        });
+
     }
     private void goToOpcionesJuego(){
         Intent intentOpciones = new Intent(this,OpcionesJuego.class);
@@ -37,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
     private void goToReglas(){
         Intent intentReglas = new Intent(this,Reglas.class);
         startActivityForResult(intentReglas, 1);
+    }
+
+    private void goToAcerca(){
+        Intent intentAcerca = new Intent(this,Acerca.class);
+        startActivityForResult(intentAcerca, 1);
     }
 
 }
